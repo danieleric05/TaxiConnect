@@ -5,7 +5,7 @@ import styles from './styles.js';
 
 import typesData from '../../assets/data/types';
 
-const NewConTypes = () => {
+const NewConTypes = (props) => {
     const confirm =() => {
         console.warn('confirm');
     }

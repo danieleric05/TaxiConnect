@@ -17,10 +17,7 @@ const workPlace ={
     geometry: {location: {lat: 5.3856850, lng: -3.9771590}},
 }
 
-const DestinationSearch = () =>{
-
-    const [fromText,setFromText] = useState('');
-    const [DestinationText, setDestinationText] = useState('');
+const DestinationSearch = (props) =>{
 
     const [originPlace, setOriginPlace] = useState (null);
     const [destinationPlace, setDestinationPlace] = useState (null);

@@ -10,7 +10,7 @@ import { useNavigation } from "@react-navigation/native";
 import styles from "./styles";
 
 
-const HomeSearch = () => {
+const HomeSearch = (props) => {
     const navigation = useNavigation();
 
     const goToSearch =()=>{

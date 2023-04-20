@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
         marginBottom:10,
 
     },
-    learnmore:{
+    learnMore:{
         color:'#fff',
         fontSize:15,
         fontWeight:'bold',

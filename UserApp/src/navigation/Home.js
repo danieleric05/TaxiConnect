@@ -8,7 +8,7 @@ import SearchResults  from "../screens/SearchResults";
 
 const Stack = createNativeStackNavigator();
 
-const HomeNavigator =() => {
+const HomeNavigator =(props) => {
     return (
         <Stack.Navigator
             screenOptions={{

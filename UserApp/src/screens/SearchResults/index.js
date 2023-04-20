@@ -7,7 +7,7 @@ import NewConTypes from "../../components/NewConTypes";
 
 import {useRoute} from '@react-navigation/native'; 
 
-const SearchResults = () => {
+const SearchResults = (props) => {
     const route = useRoute();
 
     console.log(route.params)
