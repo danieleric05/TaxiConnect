@@ -9,9 +9,12 @@ import 'react-native-gesture-handler';
 import React, { useEffect } from 'react';
 import {StatusBar, PermissionsAndroid, Platform} from 'react-native';
 import Geolocation from '@react-native-community/geolocation';
-
 import RootNavigator from './src/navigation/Root';
+import { withAuthenticator } from 'aws-amplify-react-native';
+import { Amplify } from 'aws-amplify';
+import awsconfig from './src/aws-exports';
 
+Amplify.configure(awsconfig);
 
 /* L'import ici prends en compte les version react native au dessus de 0.60.0 */
 
@@ -65,4 +68,4 @@ useEffect(() => {
   );
 };
 
-export default App;
+export default withAuthenticator (App);

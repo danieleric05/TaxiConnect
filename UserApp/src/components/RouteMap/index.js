@@ -35,11 +35,11 @@ const RouteMap  = ({origin, destination}) =>{
                 strokeColor="black"
             />
             <Marker
-                coordinate={origin}
+                coordinate={{origin}}
                 title={'Origin'}
             />
             <Marker
-                coordinate={destination}
+                coordinate={{destination}}
                 title={'Destination'}
             />
         </MapView>

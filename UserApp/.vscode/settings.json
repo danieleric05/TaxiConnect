@@ -14,6 +14,8 @@
     "antd",
     "apikey",
     "APIKEY",
+    "Authentificator",
+    "awsconfig",
     "clockcircle",
     "codemod",
     "compoment",
@@ -37,6 +39,7 @@
     "regexes",
     "snuf",
     "stepforward",
-    "USERTABLE"
+    "USERTABLE",
+    "writteen"
   ]
 }
