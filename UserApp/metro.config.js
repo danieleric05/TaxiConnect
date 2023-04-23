@@ -14,6 +14,7 @@ module.exports = {
       transform: {
         experimentalImportSupport: false,
         inlineRequires: true,
+         resolver: null,
       },
     }),
   },

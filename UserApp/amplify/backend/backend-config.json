@@ -1,4 +1,22 @@
 {
+  "api": {
+    "userapp": {
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "additionalAuthenticationProviders": [],
+          "defaultAuthentication": {
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7
+            },
+            "authenticationType": "API_KEY"
+          }
+        }
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "AppSync"
+    }
+  },
   "auth": {
     "userappee848e79ee848e79": {
       "customAuth": false,
@@ -40,6 +58,24 @@
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_userappee848e79ee848e79PostAuthentication_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "userappee848e79ee848e79PostAuthentication"
+        }
+      ]
+    },
+    "AMPLIFY_function_userappee848e79ee848e79PostAuthentication_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "userappee848e79ee848e79PostAuthentication"
+        }
+      ]
     }
   }
 }
