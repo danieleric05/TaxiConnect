@@ -14,6 +14,7 @@ module.exports = {
       transform: {
         experimentalImportSupport: false,
         inlineRequires: true,
+        babelTransformerPath: require.resolve('metro-react-native-babel-transformer'),
          resolver: null,
       },
     }),

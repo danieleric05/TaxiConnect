@@ -21,9 +21,6 @@
           "deploymentBucketName": "amplify-userapp-dev-125044-deployment",
           "s3Key": "amplify-builds/userappee848e79ee848e79PostAuthentication-42582f556c516a535937-build.zip"
         }
-      },
-      "api": {
-        "userapp": {}
       }
     }
   }
