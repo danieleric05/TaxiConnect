@@ -41,5 +41,6 @@
     "stepforward",
     "USERTABLE",
     "writteen"
-  ]
+  ],
+  "java.compile.nullAnalysis.mode": "disabled"
 }

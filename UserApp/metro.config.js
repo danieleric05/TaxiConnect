@@ -7,15 +7,17 @@
 // exclusionList is a function that takes an array of regexes and combines
 // them with the default exclusions to return a single regex.
 
+const exclusionList = require('metro-config/src/defaults/exclusionList');
+
 module.exports = {
-  
+  resolver: {
+    blacklistRE: exclusionList([/#current-cloud-backend\/.*/]),
+  },
   transformer: {
     getTransformOptions: async () => ({
       transform: {
         experimentalImportSupport: false,
         inlineRequires: true,
-        babelTransformerPath: require.resolve('metro-react-native-babel-transformer'),
-         resolver: null,
       },
     }),
   },
